@@ -4,54 +4,104 @@
     <head>
         <title> Retro games </title>
         <style>
+
+#container {
+
+    background-color: default;
+    border: 5px ridge ;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: containerborder 10s infinite;
+   
+
+}
+
+@keyframes containerborder {
+    0%   {border-color: white;}
+    10%  {border-color: black;}
+    20%  {border-color: white;}
+    30%  {border-color: black;}
+    40%  {border-color: white;}
+    50%  {border-color: black;}
+    60%  {border-color: white;}
+    70%  {border-color: black;}
+    80%  {border-color: white;}
+    90%  {border-color: black;}
+    100% { border-color:white;}
+}
+
+#border-color-div {
+
+    background-color: none;
+    animation: container 10s infinite;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@keyframes container {
+    0%  {background-color: #9933ff ;}
+    10% {background-color: #6600ff ;}
+    20% {background-color: #9933ff ;}
+    30% {background-color: #6600ff ;}
+    40% {background-color: #9933ff ;}
+    50% {background-color: #6600ff ;}
+    60% {background-color: #9933ff ;}
+    70% {background-color: #6600ff ;}
+    80% {background-color: #9933ff ;}
+    90% {background-color: #6600ff ; }
+    100% {background-color:#9933ff ;}
+}
+
+
 body {
 
-background-image: url("retro_wallpaper.jpg");
+background-image: url("retro_gif.gif");
 background-attachment: fixed;
+background-repeat: no-repeat;
+height: auto;
+background-size: cover;
+
 }
 
 
 #header {
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 30px;
-    text-align: center;
-    font-size: 60px;
-    color: black;
-    background-color: white;
-    margin-left: 20%;
-    margin-right: 20%;
+
+font-size: 70px;
+font-family: monospace, Arial;
+letter-spacing: 20px;
+text-align: center;
+
+padding: 10px;
+
+border: 3px solid black;
+border-radius: 15px;
+
+background-color: white;
+
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+width: 700px;
+
+}
+
+#header:link {text-decoration: none; color: black;}
+#header:visited {color: black;}
+#header:active {color: black;}
+#header:hover { 
+    background-color: black;
+    color: white;
+    border:3px solid white;
+    transition: 0.5s;
 
 }
 
 
-h3 {
-    text-align: center;
-    font-size: 40px;
-    border-left: 10px solid red;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
-    background-color: white;
-
-    margin-bottom: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: black;
-    text-decoration: wavy;
-
-
-}
-
-    .column {
-    float: left;
-    width: 50%;
-    }
-
-    .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
 
 
 
@@ -59,197 +109,80 @@ h3 {
     </head>
 
     <body>
-        <h1 id="header"> RETRO GAMES </h1>
-<    <h3>WAKE UP WAKE UP WAKE UP WAKE UP</h3>
+    <div id="border-color-div"> 
+        <div id="container">   
+        <a id="header" href="https://melon-tree.github.io/retro/"> RETRO GAMES</a>
+<pre>
 
-    <div class="row">
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div><div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div><div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div><div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div><div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div><div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div><div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div><div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div><div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
-        <div class="column">
 
-            <h3>WAKE UP WAKE UP</h3>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
     </div>
-    <h3>WAKE UP WAKE UP WAKE UP WAKE UP</h3>
-    <h3>WAKE UP WAKE UP WAKE UP WAKE UP</h3>
-
+</div>
     </body>
 </html>
