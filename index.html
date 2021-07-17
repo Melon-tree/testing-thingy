@@ -70,7 +70,7 @@ background-size: cover;
 
 #header {
 
-font-size: 70px;
+font-size: 50px;
 font-family: monospace, Arial;
 letter-spacing: 20px;
 text-align: center;
@@ -86,7 +86,9 @@ margin-top: 20px;
 margin-left: auto;
 margin-right: auto;
 display: block;
-width: 700px;
+width: 550px;
+
+text-shadow: 5px 5px 5px darkblue;
 
 }
 
@@ -97,21 +99,74 @@ width: 700px;
     background-color: black;
     color: white;
     border:3px solid white;
-    transition: 0.5s;
+    text-shadow: -5px 5px 5px yellowgreen;
+    transition: .4s;
+
+}
+
+.game-table-items {
+
+    background-color: white;
+
+    width: 100px;
+
+    text-align: center;
+
+    padding: 10px;
+
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    
+}
+
+
+.game-table-header {
+
+background-color: white;
+
+width: 100px;
+
+padding: 10px;
+
+text-align: center;
+
+font-size: 20px ;
+
+border-top: 3px solid black;
+border-bottom: 3px solid black;
+border-left: 3px solid black;
+border-right: 3px solid black;
+
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
 
 }
 
 
 
+#game-table {
+
+    margin-left: 30px;
+}
+
 
 
         </style>
     </head>
-
     <body>
     <div id="border-color-div"> 
         <div id="container">   
-        <a id="header" href="https://melon-tree.github.io/retro/"> RETRO GAMES</a>
+
+            <a id="header" href="https://melon-tree.github.io/retro/"> RETRO GAMES</a>
+
+<div id="game-table">       
+<div class="game-table-header">GAMES</div>
+<div class="game-table-items">ITEM</div>
+<div class="game-table-items">ITEM</div>
+</div>
+
+
 <pre>
 
 
@@ -181,8 +236,55 @@ width: 700px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </pre>
-    </div>
+
+</div>
 </div>
     </body>
 </html>
