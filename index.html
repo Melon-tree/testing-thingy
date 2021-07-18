@@ -7,13 +7,12 @@
 
 #container {
 
-    border: 5px solid;
     margin-left: 0%;
     margin-right: 0%;
     margin-top: 20px;
     margin-bottom: 20px;
     animation: containerborder 10s infinite; 
-   
+    border: 5px solid;
 
 }
 
@@ -30,6 +29,17 @@
     80%  {border-color: white;}
     90%  {border-color: black;}
     100% {border-color:white;}
+}
+
+
+@keyframes freezeborderblack {
+    from {border-color: black;}
+    to {border-color: black;}
+}
+
+@keyframes freezeborderwhite {
+    from {border-color: white;}
+    to {border-color: white;}
 }
 
 #border-color-div {
@@ -216,10 +226,10 @@ border-top-right-radius: 10px;
 
 .extra-items:hover {background-color: black; color: white; transition: .1s;}
 
-#buttons-last-child {border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
+#background-buttons-last-child {border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
 #extra-items-last-child {border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
 
-.buttons-header {
+.background-buttons-header {
 
 background-color: white;
 
@@ -245,7 +255,7 @@ margin-top: 20px;
 
 }
 
-.buttons-item {
+.background-buttons-item {
     
     background-color: white;
 
@@ -268,8 +278,60 @@ margin-top: 20px;
 
 }
 
-.buttons-item:hover {background-color: black; color: white;  transition: .1s;}
+.background-buttons-item:hover {background-color: black; color: white;  transition: .1s;}
 
+
+.border-buttons-header {
+    
+background-color: white;
+
+padding: 10px;
+
+text-align: center;
+
+font-size: 18px ;
+
+text-decoration: underline;
+
+border-top: 3px solid black;
+border-bottom: 3px solid black;
+border-left: 3px solid black;
+border-right: 3px solid black;
+
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+
+font-variant: small-caps;
+
+margin-top: 20px;
+
+}
+
+.border-buttons-item {
+
+    
+    background-color: white;
+
+    font-size: 15px;
+
+    text-align: center;
+
+    padding: 10px;
+
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-top: none;
+
+    font-variant: small-caps;
+    font-family: 'Times New Roman';
+
+    width: 150px;
+
+}
+
+.border-buttons-item:hover {background-color: black; color: white;  transition: .1s;}
+#border-buttons-last-child {border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
 
 #title {
 
@@ -363,15 +425,46 @@ margin-top: 20px;
     <div class="extra-items">Github</div>
     <div id="extra-items-last-child" class="extra-items">About</div>
 
-    <div class="buttons-header">BUTTONS</div>
-    <button class="buttons-item" type="button" onclick="freezebackground()">Freeze</button>
-    <button id="buttons-last-child" class="buttons-item" type="button" onclick="unfreezebackground()">Unfreeze</button>
-    </div>
+    <div class="background-buttons-header">BACKGROUND</div>
+    <button class="background-buttons-item" type="button" onclick="freezebackground()">Freeze</button>
+    <button id="background-buttons-last-child" class="background-buttons-item" type="button" onclick="unfreezebackground()">Unfreeze</button>
+
+    <div class="border-buttons-header">BORDER</div>
+    <button class="border-buttons-item" type="button" onclick="freezeborderblack()">Freeze Black</button>
+    <button class="border-buttons-item" type="button" onclick="freezeborderwhite()">Freeze White</button>
+    <button class="border-buttons-item" id="border-buttons-last-child" type="button" onclick="unfreezeborder()">Unfreeze</button>
+
+</div>
 
 
 
 
+<script>
 
+    function freezebackground() {
+        document.body.style.backgroundImage = "url('frozen_img_background.jpg')";
+    }
+    
+    function unfreezebackground() {
+        document.body.style.backgroundImage = "url('retro_gif.gif')";
+    }
+
+    function freezeborderblack() {
+        document.getElementById("container").style.animation = "freezeborderblack 2s 2";
+    }
+
+    function freezeborderwhite() {
+        document.getElementById("container").style.animation = "freezeborderwhite 2s 2";
+    }
+
+    function unfreezeborder() {
+        document.getElementById("container").style.animation = "containerborder 10s infinite";
+
+    }
+    
+    
+    
+    </script>
 
 
 
@@ -405,22 +498,7 @@ margin-top: 20px;
 
 
 
-<script>
 
-function freezebackground() {
-
-    document.body.style.backgroundImage = "url('frozen_img_background.jpg')";
-}
-
-function unfreezebackground() {
-
-    document.body.style.backgroundImage = "url('retro_gif.gif')";
-
-}
-
-
-
-</script>
 
 <pre>
 
