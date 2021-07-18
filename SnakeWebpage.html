@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Retro games </title>
+        <style>
+
+#container {
+
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: containerborder 10s infinite; 
+    border: 5px solid;
+
+}
+
+
+@keyframes containerborder {
+    0%   {border-color: white;}
+    10%  {border-color: black;}
+    20%  {border-color: white;}
+    30%  {border-color: black;}
+    40%  {border-color: white;}
+    50%  {border-color: black;}
+    60%  {border-color: white;}
+    70%  {border-color: black;}
+    80%  {border-color: white;}
+    90%  {border-color: black;}
+    100% {border-color:white;}
+}
+
+
+@keyframes freezeborderblack {
+    from {border-color: black;}
+    to {border-color: black;}
+}
+
+@keyframes freezeborderwhite {
+    from {border-color: white;}
+    to {border-color: white;}
+}
+
+@keyframes removeborder {
+    from {border: 5px solid rgba(0, 0, 0, 0);}
+    to {border: 5px solid rgba(0, 0, 0, 0);}
+}
+
+#border-color-div {
+
+    animation: container 10s infinite;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+@keyframes freezemainbackgroundpurple {
+    from {background-color: #6600ff;}
+    to {background-color: #6600ff;}
+}
+
+@keyframes freezemainbackgroundpink {
+    from {background-color: #9933ff;}
+    to {background-color: #9933ff;}
+}
+
+@keyframes container {
+    0%  {background-color: #9933ff ;}
+    10% {background-color: #6600ff ;}
+    20% {background-color: #9933ff ;}
+    30% {background-color: #6600ff ;}
+    40% {background-color: #9933ff ;}
+    50% {background-color: #6600ff ;}
+    60% {background-color: #9933ff ;}
+    70% {background-color: #6600ff ;}
+    80% {background-color: #9933ff ;}
+    90% {background-color: #6600ff ; }
+    100% {background-color:#9933ff ;}
+}
+
+@keyframes removemainbackground {
+    from {background-color: default;}
+    to {background-color: default;}
+}
+
+body {
+
+background-image: url("retro_gif.gif");
+background-attachment: fixed;
+background-repeat: no-repeat;
+height: auto;
+background-size: cover;
+
+}
+
+
+#header {
+
+font-size: 50px;
+font-family: monospace, Arial;
+letter-spacing: 20px;
+text-align: center;
+
+padding: 10px;
+
+border: 3px solid black;
+border-radius: 15px;
+
+background-color: white;
+
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+width: 550px;
+
+text-shadow: 5px 5px 5px darkblue;
+
+}
+
+#header:link {text-decoration: none; color: black;}
+#header:visited {color: black;}
+#header:active {color: black;}
+#header:hover { 
+    background-color: black;
+    color: white;
+    border:3px solid white;
+    text-shadow: -5px 5px 5px yellowgreen;
+    transition: .3s;
+
+}
+
+.game-table-items {
+
+    background-color: white;
+
+    font-size: 15px;
+
+    text-align: center;
+
+    padding: 10px;
+
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    
+}
+
+
+#game-table-header {
+
+background-color: white;
+
+
+padding: 10px;
+
+text-align: center;
+
+font-size: 18px ;
+
+text-decoration: underline;
+
+border-top: 3px solid black;
+border-bottom: 3px solid black;
+border-left: 3px solid black;
+border-right: 3px solid black;
+
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+
+}
+
+#game-table-items-last-item {border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
+
+
+#game-table {
+
+    margin-left: 25px;
+    float: left;
+    font-variant: small-caps;
+    width: 150px;
+
+}
+
+.game-table-items:hover {
+
+    background-color: black;
+    color: white;
+    transition: .1s;
+
+}
+
+
+#extra-and-buttons {
+
+    margin-right: 25px;
+    float: right;
+    font-variant: small-caps;
+    width: 150px;
+
+}
+
+
+.extra-items {
+
+    background-color: white;
+
+    font-size: 15px;
+
+    text-align: center;
+
+    padding: 10px;
+
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+
+}
+
+
+
+.extra-items-header {
+    
+background-color: white;
+
+padding: 10px;
+
+text-align: center;
+
+font-size: 18px ;
+
+text-decoration: underline;
+
+border-top: 3px solid black;
+border-bottom: 3px solid black;
+border-left: 3px solid black;
+border-right: 3px solid black;
+
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+
+}
+
+.extra-items:hover {background-color: black; color: white; transition: .1s;}
+
+#background-buttons-last-child {border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
+#extra-items-last-child {border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
+
+.background-buttons-header {
+
+background-color: white;
+
+padding: 10px;
+
+text-align: center;
+
+font-size: 18px ;
+
+text-decoration: underline;
+
+border-top: 3px solid black;
+border-bottom: 3px solid black;
+border-left: 3px solid black;
+border-right: 3px solid black;
+
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+
+font-variant: small-caps;
+
+margin-top: 20px;
+
+}
+
+.background-buttons-item {
+    
+    background-color: white;
+
+    font-size: 15px;
+
+    text-align: center;
+
+    padding: 10px;
+
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-top: none;
+
+    font-variant: small-caps;
+    font-family: 'Times New Roman';
+
+    width: 150px;
+
+
+}
+
+.background-buttons-item:hover {background-color: black; color: white;  transition: .1s;}
+
+
+.border-buttons-header {
+    
+background-color: white;
+
+padding: 10px;
+
+text-align: center;
+
+font-size: 18px ;
+
+text-decoration: underline;
+
+border-top: 3px solid black;
+border-bottom: 3px solid black;
+border-left: 3px solid black;
+border-right: 3px solid black;
+
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+
+font-variant: small-caps;
+
+margin-top: 20px;
+
+}
+
+.border-buttons-item {
+
+    
+    background-color: white;
+
+    font-size: 15px;
+
+    text-align: center;
+
+    padding: 10px;
+
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-top: none;
+
+    font-variant: small-caps;
+    font-family: 'Times New Roman';
+
+    width: 150px;
+
+}
+
+.border-buttons-item:hover {background-color: black; color: white;  transition: .1s;}
+#border-buttons-last-child {border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
+
+.main-background-buttons-header {
+        
+background-color: white;
+
+padding: 10px;
+
+text-align: center;
+
+font-size: 18px ;
+
+text-decoration: underline;
+
+border-top: 3px solid black;
+border-bottom: 3px solid black;
+border-left: 3px solid black;
+border-right: 3px solid black;
+
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+
+font-variant: small-caps;
+
+margin-top: 20px;
+
+}
+
+
+.main-background-buttons-item {
+    
+    background-color: white;
+
+    font-size: 15px;
+
+    text-align: center;
+
+    padding: 10px;
+
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-top: none;
+
+    font-variant: small-caps;
+    font-family: 'Times New Roman';
+
+    width: 150px;
+
+}
+
+.main-background-buttons-item:hover {background-color: black; color: white;  transition: .1s;}
+#main-background-buttons-last-child {border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
+
+
+#title {
+
+ margin-top: 50px;
+
+ padding-top: 15px;
+ padding-right: 15px;
+ padding-bottom: 15px;
+ padding-left: 15px;
+
+}
+
+#paragraph {
+
+ padding-top: 0px;
+ padding-right: 15px;
+ padding-bottom: 15px;
+ padding-left: 15px;
+
+ font-size: 16px;
+ 
+}
+
+#title-and-paragraph {
+
+background-color: white;
+color: black;
+font-family: monospace;
+
+width: 650px;
+
+text-align: left;
+
+margin-right: auto;
+margin-left: auto;
+
+box-sizing: border-box;
+
+}
+
+        </style>
+    </head>
+    <body>
+    <div id="border-color-div"> 
+        <div id="container">   
+
+            <a id="header" href="https://melon-tree.github.io/retro/"> RETRO GAMES</a>
+
+
+
+
+
+
+<div id="game-table">       
+<div id="game-table-header">GAMES</div>
+<div class="game-table-items">Atari</div>
+<div class="game-table-items">Breakout</div>
+<div class="game-table-items">Pacman</div>
+<div class="game-table-items">Tetris</div>
+<div class="game-table-items">Dino</div>
+<div class="game-table-items">Pong</div>
+<div class="game-table-items">Minesweeper</div>
+<div class="game-table-items">Tic-Tac-Toe</div>
+<div class="game-table-items">Tron</div>
+<div class="game-table-items">ITEM</div>
+<div class="game-table-items">ITEM</div>
+<div class="game-table-items">ITEM</div>
+<div id="game-table-items-last-item" class="game-table-items">ITEM</div>
+
+</div>
+
+
+
+
+<div id="extra-and-buttons">       
+    <div class="extra-items-header">EXTRA</div>
+    <div class="extra-items">Github</div>
+    <div id="extra-items-last-child" class="extra-items">About</div>
+
+    <div class="background-buttons-header">BACKGROUND IMAGE</div>
+    <button class="background-buttons-item" type="button" onclick="freezebackground()">Freeze</button>
+    <button id="background-buttons-last-child" class="background-buttons-item" type="button" onclick="unfreezebackground()">Unfreeze</button>
+
+    <div class="border-buttons-header">BORDER</div>
+    <button class="border-buttons-item" type="button" onclick="freezeborderblack()">Freeze Black</button>
+    <button class="border-buttons-item" type="button" onclick="freezeborderwhite()">Freeze White</button>
+    <button class="border-buttons-item" type="button" onclick="unfreezeborder()">Unfreeze</button>
+    <button class="border-buttons-item" id="border-buttons-last-child" type="button" onclick="removeborder()">Remove Border</button>
+
+    <div class="main-background-buttons-header">MAIN BACKGROUND</div>
+    <button class="main-background-buttons-item" type="button" onclick="freezemainbackgroundpurple()">Freeze Purple</button>
+    <button class="main-background-buttons-item" type="button" onclick="freezemainbackgroundpink()">Freeze Pink</button>
+    <button class="main-background-buttons-item" type="button" onclick="unfreezemainbackground()">Unfreeze</button>
+    <button id="main-background-buttons-last-child" class="main-background-buttons-item" type="button" onclick="removemainbackground()">Remove Background</button>
+</div>
+
+
+<script>
+
+    function freezebackground() {
+        document.body.style.backgroundImage = "url('frozen_img_background.jpg')";
+    }
+    
+    function unfreezebackground() {
+        document.body.style.backgroundImage = "url('retro_gif.gif')";
+    }
+
+    function freezeborderblack() {
+        document.getElementById("container").style.animation = "freezeborderblack 2s infinite";
+    }
+
+    function freezeborderwhite() {
+        document.getElementById("container").style.animation = "freezeborderwhite 2s infinite";
+    }
+
+    function unfreezeborder() {
+        document.getElementById("container").style.animation = "containerborder 10s infinite";
+    }
+
+    function removeborder() {
+        document.getElementById("container").style.animation = "removeborder 2s infinite";
+    }
+
+    function freezemainbackgroundpurple() {
+        document.getElementById("border-color-div").style.animation = "freezemainbackgroundpurple 2s infinite";
+    }
+    
+    function freezemainbackgroundpink() {
+        document.getElementById("border-color-div").style.animation = "freezemainbackgroundpink 2s infinite";
+    }
+
+    function unfreezemainbackground() {
+        document.getElementById("border-color-div").style.animation = "container 10s infinite";
+    }
+
+    function removemainbackground() {
+        document.getElementById("border-color-div").style.animation = "removemainbackground 2s infinite";
+    }
+    
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+<div id="title-and-paragraph">
+<!--   ADD TITLE BELOW   -->
+<h1 id="title"> This is a title!</h1>
+
+
+<div id="paragraph">
+    <!--   ADD PARAGRAPH BELOW   -->
+    <p> word word word word word word
+    word word word word word word 
+    word word word word word word 
+    word word word word word word 
+    word word word word word word 
+    word word word word word word 
+    word word word word word word 
+    word word word word word word 
+    word word word word word word 
+    word word word word word word 
+    word word word word word word 
+    word word word word word word 
+
+</p>
+</div>
+</div>
+
+
+
+
+
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+
+</div>
+</div>
+    </body>
+</html>
