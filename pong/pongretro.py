@@ -1,4 +1,6 @@
 import pygame
+import cgitb 
+cgitb.enable()
 from random import randint
 
 pygame.init()
